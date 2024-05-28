@@ -1,0 +1,109 @@
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(to bottom, #000000, #c3c8cd);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 115px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.details {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.image img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.recipe {
+  background: linear-gradient(to right, #f7f7f7, #cfcfcf);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+}
+
+.ingredients, .instructions {
+  margin-bottom: 20px;
+}
+
+.ingredients h2, .instructions h2 {
+  text-align: center;
+  background: -webkit-linear-gradient(left, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+}
+
+.ingredients ul {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding-left: 0;
+}
+
+.ingredients ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ingredients ul li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.instructions ol {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+  .text {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+}
